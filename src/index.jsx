@@ -9,15 +9,19 @@ import {
   Route,
   Routes
 } from "react-router-dom";
+import Accomodation from './pages/Accomodation';
+import Header from './components/header';
 
 
 ReactDOM.render(
   <React.StrictMode>
       <Router>
+        <Header />
         <Routes>
           <Route exact path="/" element={<Home />}>
           </Route>
-          
+          <Route path="/Accomodation/: accomodationId" element={<Accomodation />}>
+          </Route>
 
           <Route path="/Error" element={<Error />}>
           </Route>
