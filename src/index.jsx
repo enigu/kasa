@@ -11,6 +11,7 @@ import {
 } from "react-router-dom";
 import Accomodation from './pages/Accomodation';
 import Header from './components/header';
+import Footer from './components/footer';
 
 
 ReactDOM.render(
@@ -22,10 +23,10 @@ ReactDOM.render(
           </Route>
           <Route path="/Accomodation/: accomodationId" element={<Accomodation />}>
           </Route>
-
           <Route path="/Error" element={<Error />}>
           </Route>
-        </Routes>  
+        </Routes>
+        <Footer />
       </Router>
   </React.StrictMode>,
 document.getElementById('root')

@@ -1,0 +1,19 @@
+
+.banner {
+    height: 40vh; 
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    border-radius: 10px;
+}
+
+.banner p {
+    color: white;
+    position: absolute;
+    top: 15vh;
+    left: 40%;
+    font-size: 24px;
+    font-weight: 500;
+}
