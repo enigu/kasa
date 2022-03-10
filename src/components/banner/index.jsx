@@ -1,7 +1,6 @@
 import '../banner/banner.css'
 import banner from '../../assets/banner.jpeg'
 
-
 function Banner() {
     return (
         <div className='banner' style={{
@@ -11,7 +10,6 @@ function Banner() {
             <p>Chez vous, partout et ailleurs</p>
         </div>
     )
-
 }
 
 export default Banner

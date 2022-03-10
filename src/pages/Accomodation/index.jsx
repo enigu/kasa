@@ -1,20 +1,19 @@
-import accomodation from '../../data/logements.json';
+import accomodation from '../../data/logements';
 import Tag from '../../components/tag/index';
 import { useParams } from 'react-router-dom';
-
+import GetAccomodations from '../../services/getAccomodations';
 
 function Accomodation () {
     const {accomodationId} = useParams()
     const title = accomodation.title
-    console.log(title)
+
 
     return (
         <div className="info_left">
-        <h1>title {accomodationId}</h1>
+        <h1>title </h1>
 
        
             <Tag />
-
 
         </div>
     )
