@@ -1,14 +1,29 @@
 import { useState, useEffect } from 'react'
-
+import {useParams} from 'react-router-dom'
+import {Link} from 'react-router-dom'
 
 function GetAccomodations(url) {
+    const {accomodationNumber} = useParams()
+    const accomodationNumberInt = parseInt(accomodationNumber)
+    const prevAccomodationNumber = accomodationNumberInt === 1 ? 1 : accomodationNumberInt - 1 
+    const nextQuestionNumber = accomodationNumberInt + 1 
+    const [accomodationData, setAccomodationData] = useState({})
+    const [error, setError] = useState(false)
+
 
     useEffect(() => {
-        fetch(url)
-             .then((response) => response.json()
-             .then(({ surveyData }) => console.log(surveyData))
-             .catch((error) => console.log(error))
-         )
+        async function fetchAccomodations() {
+            try {
+                const response = await fetch(url)
+                const {accomodationData} = await response.json()
+                setAccomodationData(accomodationData)
+            }
+            catch (err) {
+                console.log(err)
+                setError(true)
+            }
+        }
+        fetchAccomodations()
      }, [])
 
 }
