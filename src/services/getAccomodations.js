@@ -6,7 +6,7 @@ function GetAccomodations(url) {
     const {accomodationNumber} = useParams()
     const accomodationNumberInt = parseInt(accomodationNumber)
     const prevAccomodationNumber = accomodationNumberInt === 1 ? 1 : accomodationNumberInt - 1 
-    const nextQuestionNumber = accomodationNumberInt + 1 
+    const nextAccomodationNumber = accomodationNumberInt + 1 
     const [accomodationData, setAccomodationData] = useState({})
     const [error, setError] = useState(false)
 
@@ -24,7 +24,31 @@ function GetAccomodations(url) {
             }
         }
         fetchAccomodations()
-     }, [])
+    }, [])
+
+    if (error) {
+         return <span> Error 404 </span>
+    }
+
+    return (
+        <div>
+            <h1>{accomodationNumber}</h1>
+            <p>{accomodationData[accomodationNumber]}</p>
+            <div>
+                <Link to={`/getAccomodations/${prevAccomodationNumber}`}>Précédent</Link>
+                {accomodationData[accomodationNumberInt + 1] ? (
+                <Link to={`/getAccomodations/${nextAccomodationNumber}`}>Suivant</Link>
+                ) : (
+                <Link to="/results">Résultats</Link>
+                )}
+            </div>
+
+
+        </div>
+       
+    )
+
+
 
 }
 
