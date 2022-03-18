@@ -1,4 +1,4 @@
-
+import '../thumb/thumb.css'
 
 function Thumb({image, title}) {
     return (

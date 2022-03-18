@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import {useParams} from 'react-router-dom'
 import {Link} from 'react-router-dom'
+import accomodation from '../data/logements.json'
 
 function GetAccomodations(url) {
     const {accomodationNumber} = useParams()

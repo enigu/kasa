@@ -1,0 +1,22 @@
+.home-container {
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+.accomodation-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2em;
+}
+
+.accomodation-container a {
+    width: 16em;
+    height: 16em;
+    text-decoration: none;
+    margin-bottom: 2em;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
