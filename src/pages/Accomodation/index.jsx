@@ -1,23 +1,30 @@
 import accomodation from '../../data/logements';
 import Tag from '../../components/tag/index';
-import { useParams } from 'react-router-dom';
-import GetAccomodations from '../../services/getAccomodations';
+import { useParams, Navigate } from 'react-router-dom';
 
-function Accomodation () {
-    const {accomodationId} = useParams()
-    const title = accomodation.title
 
+
+function Accomodation(props) { 
+    const { id } = useParams()
+    
 
     return (
         <div className="info_left">
-        <h1>title </h1>
+            {accomodation.accomodation.filter(house => house.id === id).map((filteredHouse, index) => (
+                <div key={index}>
+                    <h1>{filteredHouse.title}</h1>
+                    <p>{filteredHouse.location}</p>
+                </div>
+                
+                
 
-       
-            <Tag />
+            ))}
+
+                
 
         </div>
     )
-}
 
+}
 export default Accomodation
 

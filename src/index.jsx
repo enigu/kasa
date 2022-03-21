@@ -14,17 +14,15 @@ import Header from './components/header';
 import Footer from './components/footer';
 
 
+
 ReactDOM.render(
   <React.StrictMode>
       <Router>
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
-
-          <Route path="/Accomodation" element={<Accomodation />}>
-          </Route>
-          <Route path="/Error" element={<Error />}>
-          </Route>
+          <Route path="/Accomodation/:id" element={<Accomodation />} />
+          <Route path="/Error" element={<Error />} />
         </Routes>
         <Footer />
       </Router>
