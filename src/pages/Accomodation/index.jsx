@@ -1,6 +1,7 @@
 import accomodation from '../../data/logements';
 import Tag from '../../components/tag/index';
 import { useParams, Navigate } from 'react-router-dom';
+import Rating from '../../components/rating/index'
 
 
 
@@ -11,7 +12,7 @@ function Accomodation(props) {
     return (
         <div> 
             {accomodation.accomodation.filter(house => house.id === id).map((filteredHouse, index) => (
-                <div key={index} >
+                <div key={index} className="info">
                     <div className="info-left">
                         <h1>{filteredHouse.title}</h1>
                         <p>{filteredHouse.location}</p>
@@ -23,7 +24,9 @@ function Accomodation(props) {
                     </div>
 
                     <div className="info-right">
-                        <img ></img>
+                        <img src={filteredHouse.host.picture} alt="avatar-owner"/>
+                        <p>{filteredHouse.host.name}</p>
+                        < Rating ratingValue={filteredHouse.rating}/>
 
                     </div>
                 </div>
