@@ -1,13 +1,10 @@
 import '../tag/tag.css';
 
 
-function Tag ({tagName}) {
 
+function Tag ({tagList}) {
     return (
-        <div className="tag">
-            <p className="tag_name">{tagName}</p>
-
-        </div>
+            <p className="tag__text">{tagList}</p>    
     )   
 }
 

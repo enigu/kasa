@@ -9,21 +9,32 @@ function Accomodation(props) {
     
 
     return (
-        <div className="info_left">
+        <div> 
             {accomodation.accomodation.filter(house => house.id === id).map((filteredHouse, index) => (
-                <div key={index}>
-                    <h1>{filteredHouse.title}</h1>
-                    <p>{filteredHouse.location}</p>
+                <div key={index} >
+                    <div className="info-left">
+                        <h1>{filteredHouse.title}</h1>
+                        <p>{filteredHouse.location}</p>
+                        <div className="tag-list">
+                            {filteredHouse.tags.map((tag) => (
+                                <Tag key={tag} tagList={tag}/>
+                            ))}
+                        </div>
+                    </div>
+
+                    <div className="info-right">
+                        <img ></img>
+
+                    </div>
                 </div>
                 
-                
-
             ))}
-
+        </div> 
                 
 
-        </div>
+       
     )
+    
 
 }
 export default Accomodation
