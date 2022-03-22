@@ -1,5 +1,6 @@
 import '../rating/rating.css'
 import star from '../../assets/star.svg'
+import greystar from '../../assets/greystar.svg'
 
 function Rating(props) {
     const ratingValue = props.ratingValue
@@ -7,7 +8,7 @@ function Rating(props) {
     return (
         <div>
             {range.map((rangeElem) =>
-                ratingValue >= rangeElem ? <span key={rangeElem.toString()}><img src={star} alt="star" className="star"/></span> : null
+                ratingValue >= rangeElem ? <span key={rangeElem.toString()}><img src={star} alt="star" className="star"/></span> : <span key={rangeElem.toString()}><img src={greystar} alt="greystar" className="greystar"/></span>
             )}
         </div>
     )
