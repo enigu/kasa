@@ -4,6 +4,7 @@ import { useParams } from 'react-router-dom';
 import { useState } from 'react'
 import Rating from '../../components/rating/index'
 import Dropdown from '../../components/dropdown/index'
+import Carrousel from '../../components/carrousel/index'
 
 
 
@@ -15,6 +16,7 @@ function Accomodation(props) {
         <div> 
             {accomodation.accomodation.filter(house => house.id === id).map((filteredHouse, index) => (
                 <div key={index} className="info">
+                    <Carrousel pictures={filteredHouse.pictures}/>
                     <div className="info-left">
                         <h1>{filteredHouse.title}</h1>
                         <p>{filteredHouse.location}</p>
@@ -34,7 +36,7 @@ function Accomodation(props) {
                     <div className="description-dropdown">
                     <Dropdown 
                         title="Description"
-                        content={content} updateContent={updateContent}
+                        content={filteredHouse.description}
                     />
                     <Dropdown 
                         title="Équipments"
