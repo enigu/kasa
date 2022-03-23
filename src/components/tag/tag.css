@@ -1,3 +1,16 @@
-.tag {
+.tag-list {
+    display: flex;
+}
+
+.tag-text {
     background-color: #FF6060;
+    color: white;
+    border-radius: 10px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    width: 8em;
+    margin-right: 0.5em;
+    text-align: center;
 }

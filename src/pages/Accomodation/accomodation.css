@@ -1,0 +1,40 @@
+.info {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.info-left {
+    color: #FF6060;
+    margin-left: 1em; 
+}
+
+.info-left h1 {
+    font-size: 1.5em; 
+    font-weight: 500;
+}
+
+.info-left p {
+    font-size: 1em;
+}
+
+.info-right {
+    margin-right: 1em; 
+    display: flex; 
+    flex-direction: column;
+}
+.info-owner {
+    display: flex;
+}
+
+.info-owner p {
+    color: #FF6060;
+}
+
+.owner {
+    border-radius: 50%;
+    width: 6em;
+    height: 6em;
+}
+

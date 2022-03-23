@@ -15,9 +15,6 @@ function Dropdown({title, content, updateContent}) {
             <h3>{title}</h3>
             <img src={arrowdown} onClick={() => setIsFlipped(false)}/>
         </div>
-        <div className="dropdown-content">
-            <span></span>
-        </div>
     </div>
 
     ) : (
