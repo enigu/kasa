@@ -12,11 +12,56 @@
 }
 
 .accomodation-container a {
-    width: 16em;
-    height: 16em;
+    width: 20em;
+    height: 20em;
     text-decoration: none;
     margin-bottom: 2em;
     margin-left: 2em;
     margin-right: 2em;
+}
+
+/* Media-queries*/
+
+@media (max-width: 820px) {
+    .banner {
+        height: 24vh;
+    }
+    .accomodation-container a {
+        margin: 0px 0.2px 2em 0.2px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        width: auto;
+    }
+    .banner {
+        height: 16vh;
+        text-align: left;
+    }
+    .banner p {
+        top: 3vh;
+        font-size: 20px;
+        font-weight: 500;
+        left: 5%;
+        width: 160px;
+    }
+    .accomodation-container {
+        justify-content: center;
+    }
+    .accomodation-container a {
+        margin: 0px 0px 2em 0px;
+        width: auto;
+        height: auto;
+    }
+    .thumb {
+        width: auto;
+        height: auto;
+    }
+    .thumb img {
+        width: 20em;
+        height: 15em;
+
+    }
 }
 

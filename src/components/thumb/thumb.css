@@ -1,12 +1,12 @@
 .thumb {
-    width: 16em;
-    height: 16em;
+    width: 20em;
+    height: 20em;
 }
 
 .thumb img {
     object-fit: cover;
-    width: 16em;
-    height: 16em;
+    width: 20em;
+    height: 20em;
     border-radius: 6px;
     box-shadow: 0 0 15px rgba(0,0,0,0.2);
     cursor: pointer;
