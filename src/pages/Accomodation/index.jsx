@@ -1,7 +1,6 @@
 import accomodation from '../../data/logements';
 import Tag from '../../components/tag/index';
 import { useParams } from 'react-router-dom';
-import { useState } from 'react'
 import Rating from '../../components/rating/index'
 import Dropdown from '../../components/dropdown/index'
 import Carrousel from '../../components/carrousel/index'
@@ -11,10 +10,9 @@ import '../Accomodation/accomodation.css'
 
 function Accomodation(props) { 
     const { id } = useParams()
-    const [content, updateContent] = useState([])
     
     return (
-        <div> 
+        <div className="wrapper"> 
             {accomodation.accomodation.filter(house => house.id === id).map((filteredHouse, index) => (
                 <div key={index} className="accomodation-page">
                     <Carrousel pictures={filteredHouse.pictures}/>

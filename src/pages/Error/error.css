@@ -1,0 +1,23 @@
+.error-404 {
+    text-align: center;
+    color: #FF6060;
+    margin-bottom: 4em;
+}
+
+.error-404 h1 {
+    font-size: 288px;
+    font-weight: 700;
+    margin-bottom: 0px;
+}
+
+.error-404 p {
+    font-size: 36px;
+    font-weight: 500;
+    margin-bottom: 5em;
+}
+
+.error-404 a {
+    font-size: 18px;
+    font-weight: 500;
+    color: #FF6060;
+}

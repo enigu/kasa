@@ -10,6 +10,7 @@ import {
   Routes
 } from "react-router-dom";
 import Accomodation from './pages/Accomodation';
+import AboutUs from './pages/AboutUs';
 import Header from './components/header';
 import Footer from './components/footer';
 
@@ -22,6 +23,7 @@ ReactDOM.render(
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/Accomodation/:id" element={<Accomodation />} />
+          <Route path="/AboutUs" element={<AboutUs />} />
           <Route path="/Error" element={<Error />} />
         </Routes>
         <Footer />

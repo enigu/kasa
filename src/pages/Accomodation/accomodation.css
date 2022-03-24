@@ -1,8 +1,15 @@
+.accomodation-page {
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
 .info {
     display: flex;
     align-content: center;
     justify-content: space-between;
     align-items: flex-start;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 .info-left {
@@ -11,12 +18,15 @@
 }
 
 .info-left h1 {
-    font-size: 1.5em; 
+    font-size: 1.8em; 
     font-weight: 500;
+    margin-bottom: 0.2em;
 }
 
 .info-left p {
-    font-size: 1em;
+    font-size: 0.9em;
+    margin-top: 0px;
+    margin-bottom: 1.2em;
 }
 
 .info-right {
@@ -26,6 +36,7 @@
 }
 .info-owner {
     display: flex;
+    width: 170px;
 }
 
 .info-owner p {
@@ -34,7 +45,7 @@
 
 .owner {
     border-radius: 50%;
-    width: 6em;
-    height: 6em;
+    width: 5em;
+    height: 5em;
 }
 
