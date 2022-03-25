@@ -34,14 +34,21 @@
     .header-links a {
         margin-left: 0.2em;
     }
+    .error-404 {
+        margin-bottom: 12em;
+    }
     .error-404 h1 {
         font-size: 96px;
-        margin-top: 1.5em;
+        margin-top: 2.2em;
     }
     .error-404 p {
         font-size: 18px;
-        margin-left: 1.5em;
-        margin-right: 1.5em;
+        margin-left: 2.5em;
+        margin-right: 2.5em;
         margin-bottom: 6em;
+    }
+    .error-404 a {
+        margin-bottom: 4em;
+        font-size: 14px;
     }
 }

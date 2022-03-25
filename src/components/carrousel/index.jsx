@@ -22,9 +22,8 @@ function Carrousel({pictures}) {
             <img src={arrowright} className="arrow-right" onClick={nextPicture} />
             {pictures.map((picture, index) => {
                 return (    
-                    <div key={index} className={index === current ? 'picture active' : 'picture'}>
-                        {index === current && (<img src={picture} alt="carrousel-picture" className="carrousel-img"/>)}
-                        
+                    <div key={index} className={index === current ? 'picture active' : 'picture' } >
+                        {index === current && (<img src={picture} alt="carrousel-picture" className="carrousel-img"/>)} 
                     </div>
                 )
 

@@ -10,16 +10,11 @@ function AboutUs() {
             <section className="dropdowns-aboutus">
                 <Dropdown 
                     title="Fiabilité"
-                    content={aboutUs.fiability}
-                    style={{
-                        width: 100
-                    }}
-                    
+                    content={aboutUs.fiability}    
                 />
                 <Dropdown 
                     title="Respect"
-                    content={aboutUs.respect}
-                    
+                    content={aboutUs.respect}    
                 />
                 <Dropdown 
                     title="Service" 

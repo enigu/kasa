@@ -32,9 +32,7 @@
 }
 
 @media (max-width: 480px) {
-    nav {
-        width: auto;
-    }
+
     .banner {
         height: 16vh;
         text-align: left;
