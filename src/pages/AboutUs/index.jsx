@@ -5,7 +5,7 @@ import aboutUs from '../../data/aboutus'
 
 function AboutUs() {
     return (
-        <div className="home-container">
+        <div className="aboutus-container">
             <Banner />
             <section className="dropdowns-aboutus">
                 <Dropdown 
