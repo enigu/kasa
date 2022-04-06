@@ -18,12 +18,12 @@ function Carrousel({pictures}) {
 
     return (
         <section className="carrousel-container">
-            <img src={arrowleft} className="arrow-left" onClick={prevPicture} />
-            <img src={arrowright} className="arrow-right" onClick={nextPicture} />
+            <img src={arrowleft} alt='accomodation'className="arrow-left" onClick={prevPicture} />
+            <img src={arrowright} alt='accomodation' className="arrow-right" onClick={nextPicture} />
             {pictures.map((picture, index) => {
                 return (    
                     <div key={index} className={index === current ? 'picture active' : 'picture' } >
-                        {index === current && (<img src={picture} alt="carrousel-picture" className="carrousel-img"/>)} 
+                        {index === current && (<img src={picture} alt="carrousel" className="carrousel-img"/>)} 
                     </div>
                 )
 
